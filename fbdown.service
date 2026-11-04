@@ -1,0 +1,15 @@
+[Unit]
+Description=Facebook video downloader API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/fbdown
+Environment=PORT=8001
+ExecStart=/usr/bin/node /opt/fbdown/server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

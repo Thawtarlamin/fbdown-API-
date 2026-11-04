@@ -1,0 +1,1 @@
+{"description":"Facebook video downloader API (yt-dlp based, no npm deps)","engines":{"node":">=18"},"main":"server.js","name":"fbdown","scripts":{"start":"node server.js"},"version":"1.0.0"}
